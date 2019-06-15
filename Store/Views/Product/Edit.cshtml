@@ -1,0 +1,24 @@
+﻿@model Store.Models.Product.ProductVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Movie</h4>
+<hr />
+<form asp-action="CreateProduct" method="post">
+
+    <label>Product Name &nbsp;<input type="text" name="product.ProductName" value="@Model.product.ProductName" /></label>
+    <br />
+    <label>Price &nbsp;<input type="text" name="product.Price" value="@Model.product.Price"/></label>
+    <br />
+    <label>ProductInfo &nbsp;<input type="text" name="product.ProductInfo" value="@Model.product.ProductInfo"/></label>
+    <br />
+    <label>Category Id &nbsp;<input type="text" name="product.CategoryId"  value="@Model.product.CategoryId"/></label>
+    <br />
+    <input type="submit" value="Edit" />
+    <br />
+</form>
+<a asp-action="GetAll">Back to List</a>

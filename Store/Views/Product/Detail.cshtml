@@ -1,0 +1,9 @@
+﻿@model Store.Models.Product.ProductVM
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+<p>@Model.product.ProductName - @Model.product.Price</p>
+<p>@Model.product.ProductInfo</p>
+<a asp-action="GetAll">Back to List</a>

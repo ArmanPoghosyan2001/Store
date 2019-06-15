@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+
+<h2 style="text-align:center">Create Product</h2>
+
+<form asp-action="CreateProduct" method="post">
+
+    <label>Product Name &nbsp;<input type="text" name="product.ProductName" /></label>
+    <br />
+    <label>Price &nbsp;<input type="text" name="product.Price" /></label>
+    <br />
+    <label>ProductInfo &nbsp;<input type="text" name="product.ProductInfo" /></label>
+    <br />
+    <label>Category Id &nbsp;<input type="text" name="product.CategoryId" /></label>
+    <br />
+    <input type="submit" value="Create" />
+    <br />
+</form>
+    <a asp-action="GetAll">Back to List</a>
